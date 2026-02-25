@@ -136,7 +136,7 @@
 
                             <!-- Image -->
                             <div class="h-48 overflow-hidden relative">
-                                <img src="{{ asset('storage/' . $event->image_path) }}" alt="{{ $event->title }}"
+                                <img src="{{ asset($event->image_path) }}" alt="{{ $event->title }}"
                                     class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
 
                                 <div
