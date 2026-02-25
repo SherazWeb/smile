@@ -98,7 +98,7 @@
                                 <div class="relative mb-4">
                                     <div
                                         class="w-16 h-16 bg-white rounded-2xl flex items-center justify-center mx-auto transform group-hover:scale-110 group-hover:rotate-3 transition duration-400 shadow-xl">
-                                        <span x-html="$store.serviceIcons[service.iconKey]"></span>
+                                        <span x-html="service.icon"></span>
                                     </div>
                                     <!-- Active Indicator -->
                                     <div
