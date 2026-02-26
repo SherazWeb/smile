@@ -11,28 +11,27 @@
                 </button>
                 <a
                     class="border-2 border-white text-white px-8 py-4 rounded-xl font-semibold text-lg hover:bg-white hover:text-gray-900 transition duration-300">
-                    Call: 0333 3893960
+                    Call: +92 333 3893960
                 </a>
             </div>
 
             <div class="border-t border-gray-700 pt-12">
                 <div class="grid md:grid-cols-4 gap-8 text-left">
                     <div>
-                        <h3 class="font-bold text-lg mb-4">Smile Clinic</h3>
+                        <h3 class="font-bold text-lg mb-4">Smile Health Center</h3>
                         <p class="text-gray-400">Comprehensive healthcare and wellness services under one roof.</p>
                     </div>
                     <div>
                         <h3 class="font-bold text-lg mb-4">Contact</h3>
-                        <p class="text-gray-400">Office # B-6,1st Floor, Town Center, Near Habib Metro Bank, Main
-                            Abdara Road<br>Peshawar, KP, Pakistan</p>
+                        <p class="text-gray-400">Office # f18, 2nd floor, Al-Syed Plaza, opposite to Jawad Towers, main Abdara Road, Peshawar</p>
                     </div>
-                    <div>
+                    {{-- <div>
                         <h3 class="font-bold text-lg mb-4">Hours</h3>
                         <p class="text-gray-400">Always Open</p>
-                    </div>
+                    </div> --}}
                     <div>
                         <h3 class="font-bold text-lg mb-4">Emergency</h3>
-                        <p class="text-gray-400">0333 3893960</strong>
+                        <p class="text-gray-400">+92 333 3893960</strong>
                         </p>
                     </div>
                 </div>

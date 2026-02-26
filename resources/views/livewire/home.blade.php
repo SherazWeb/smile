@@ -231,6 +231,776 @@
     <!-- Values Section -->
     {{-- <x-values /> --}}
 
+    <!-- MOU & Partnerships Section -->
+    <section class="py-16 bg-gradient-to-b from-white to-teal-50" id="partners">
+        <div class="container mx-auto px-4">
+            <!-- Section Header -->
+            <div class="text-center mb-12">
+                <span class="text-teal-600 font-semibold text-sm uppercase tracking-wider">Our Partners in Care</span>
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Memorandum of Understanding</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    Strengthening healthcare delivery through strategic partnerships and collaborations
+                </p>
+            </div>
+
+            <!-- MOU Stats Summary -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mb-16">
+                <div class="text-center p-6 bg-white rounded-xl shadow-sm">
+                    <div class="text-3xl md:text-4xl font-bold text-teal-600 mb-2">12+</div>
+                    <div class="text-gray-600">Active MOUs</div>
+                </div>
+                <div class="text-center p-6 bg-white rounded-xl shadow-sm">
+                    <div class="text-3xl md:text-4xl font-bold text-teal-600 mb-2">8</div>
+                    <div class="text-gray-600">Hospitals</div>
+                </div>
+                <div class="text-center p-6 bg-white rounded-xl shadow-sm">
+                    <div class="text-3xl md:text-4xl font-bold text-teal-600 mb-2">5</div>
+                    <div class="text-gray-600">Universities</div>
+                </div>
+                <div class="text-center p-6 bg-white rounded-xl shadow-sm">
+                    <div class="text-3xl md:text-4xl font-bold text-teal-600 mb-2">3</div>
+                    <div class="text-gray-600">NGO Partners</div>
+                </div>
+            </div>
+
+            <!-- MOU Cards Grid -->
+            <div x-data="{ activeMou: null }" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- MOU Card 1 - Hospital Partnership -->
+                <div
+                    class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                    <div class="h-48 bg-gradient-to-r from-teal-500 to-blue-500 relative overflow-hidden">
+                        <!-- Decorative Pattern -->
+                        <div class="absolute inset-0 opacity-10">
+                            <svg class="w-full h-full" viewBox="0 0 100 100" fill="white">
+                                <pattern id="pattern1" x="0" y="0" width="20" height="20"
+                                    patternUnits="userSpaceOnUse">
+                                    <circle cx="10" cy="10" r="2" fill="white" />
+                                </pattern>
+                                <rect width="100" height="100" fill="url(#pattern1)" />
+                            </svg>
+                        </div>
+
+                        <!-- Logo/Icon -->
+                        <div
+                            class="absolute top-4 left-4 w-16 h-16 bg-white rounded-2xl shadow-lg flex items-center justify-center">
+                            <svg class="w-10 h-10 text-teal-600" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M4 6H20V8H4V6ZM4 11H20V13H4V11ZM4 16H14V18H4V16Z" />
+                                <path d="M19 14L22 17L19 20L17 18L19 16Z" transform="rotate(45 19 17)" />
+                            </svg>
+                        </div>
+
+                        <!-- Partner Type Badge -->
+                        <div
+                            class="absolute bottom-4 right-4 bg-white/20 backdrop-blur-sm text-white px-4 py-1 rounded-full text-sm font-semibold border border-white/30">
+                            Healthcare
+                        </div>
+                    </div>
+
+                    <div class="p-6">
+                        <!-- Partner Name -->
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">City General Hospital</h3>
+
+                        <!-- MOU Details -->
+                        <div class="flex items-center gap-2 text-sm text-gray-500 mb-3">
+                            <svg class="w-4 h-4 text-teal-600" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linecap="round" stroke-width="2"
+                                    d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                            </svg>
+                            <span>Signed: Jan 15, 2024</span>
+                            <span>•</span>
+                            <span>Valid: 3 years</span>
+                        </div>
+
+                        <!-- Description -->
+                        <p class="text-gray-600 mb-4 line-clamp-2">
+                            Collaborative partnership for patient referrals, specialized surgeries, and emergency care
+                            services with priority access for our patients.
+                        </p>
+
+                        <!-- Key Benefits/Tags -->
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-teal-50 text-teal-700 px-3 py-1 rounded-full text-sm">Patient
+                                Referrals</span>
+                            <span class="bg-teal-50 text-teal-700 px-3 py-1 rounded-full text-sm">Emergency Care</span>
+                            <span class="bg-teal-50 text-teal-700 px-3 py-1 rounded-full text-sm">Specialist
+                                Access</span>
+                        </div>
+
+                        <!-- Expandable Details Button (Mobile/Desktop) -->
+                        <button @click="activeMou = activeMou === 1 ? null : 1"
+                            class="w-full text-left text-teal-600 hover:text-teal-700 font-semibold text-sm flex items-center justify-between group">
+                            <span>View partnership details</span>
+                            <svg class="w-5 h-5 transform transition-transform group-hover:translate-x-1"
+                                :class="{ 'rotate-90': activeMou === 1 }" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linecap="round" stroke-width="2"
+                                    d="M9 5l7 7-7 7" />
+                            </svg>
+                        </button>
+
+                        <!-- Expanded Details (Alpine JS controlled) -->
+                        <div x-show="activeMou === 1" x-transition:enter="transition ease-out duration-300"
+                            x-transition:enter-start="opacity-0 transform -translate-y-2"
+                            x-transition:enter-end="opacity-100 transform translate-y-0"
+                            class="mt-4 pt-4 border-t border-gray-100 text-sm text-gray-600">
+                            <ul class="space-y-2">
+                                <li class="flex items-start gap-2">
+                                    <svg class="w-4 h-4 text-teal-600 mt-0.5 flex-shrink-0" fill="currentColor"
+                                        viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd"
+                                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                    <span>24/7 emergency trauma care access</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <svg class="w-4 h-4 text-teal-600 mt-0.5 flex-shrink-0" fill="currentColor"
+                                        viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd"
+                                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                    <span>Monthly joint medical camps</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <svg class="w-4 h-4 text-teal-600 mt-0.5 flex-shrink-0" fill="currentColor"
+                                        viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd"
+                                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                    <span>Discounted diagnostic services</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MOU Card 2 - University Partnership -->
+                <div
+                    class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                    <div class="h-48 bg-gradient-to-r from-blue-500 to-teal-500 relative overflow-hidden">
+                        <!-- Decorative Pattern -->
+                        <div class="absolute inset-0 opacity-10">
+                            <svg class="w-full h-full" viewBox="0 0 100 100" fill="white">
+                                <pattern id="pattern2" x="0" y="0" width="20" height="20"
+                                    patternUnits="userSpaceOnUse">
+                                    <path d="M0 10 L20 10 M10 0 L10 20" stroke="white" stroke-width="1" />
+                                </pattern>
+                                <rect width="100" height="100" fill="url(#pattern2)" />
+                            </svg>
+                        </div>
+
+                        <div
+                            class="absolute top-4 left-4 w-16 h-16 bg-white rounded-2xl shadow-lg flex items-center justify-center">
+                            <svg class="w-10 h-10 text-teal-600" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 3L1 9L5 11.5V18L12 22L19 18V11.5L21 10.5V17H23V9L12 3M12 5.8L17.9 9L12 12.2L6.1 9L12 5.8M7.5 13.6L11 15.8V19.5L7.5 17.3V13.6M13 19.5V15.8L19 12V16.5L13 19.5Z" />
+                            </svg>
+                        </div>
+
+                        <div
+                            class="absolute bottom-4 right-4 bg-white/20 backdrop-blur-sm text-white px-4 py-1 rounded-full text-sm font-semibold border border-white/30">
+                            Academic
+                        </div>
+                    </div>
+
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Sarhad University, Peshawar</h3>
+
+                        <div class="flex items-center gap-2 text-sm text-gray-500 mb-3">
+                            <svg class="w-4 h-4 text-teal-600" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linecap="round" stroke-width="2"
+                                    d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                            </svg>
+                            <span>Signed: Mar 10, 2024</span>
+                            <span>•</span>
+                            <span>Valid: 5 years</span>
+                        </div>
+
+                        <p class="text-gray-600 mb-4 line-clamp-2">
+                            Academic collaboration for research, internships, and clinical training programs. Joint
+                            initiatives in community health research.
+                        </p>
+
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-teal-50 text-teal-700 px-3 py-1 rounded-full text-sm">Research</span>
+                            <span class="bg-teal-50 text-teal-700 px-3 py-1 rounded-full text-sm">Internships</span>
+                            <span class="bg-teal-50 text-teal-700 px-3 py-1 rounded-full text-sm">Clinical
+                                Training</span>
+                        </div>
+
+                        <button @click="activeMou = activeMou === 2 ? null : 2"
+                            class="w-full text-left text-teal-600 hover:text-teal-700 font-semibold text-sm flex items-center justify-between group">
+                            <span>View partnership details</span>
+                            <svg class="w-5 h-5 transform transition-transform group-hover:translate-x-1"
+                                :class="{ 'rotate-90': activeMou === 2 }" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linecap="round" stroke-width="2"
+                                    d="M9 5l7 7-7 7" />
+                            </svg>
+                        </button>
+
+                        <div x-show="activeMou === 2" x-transition:enter="transition ease-out duration-300"
+                            x-transition:enter-start="opacity-0 transform -translate-y-2"
+                            x-transition:enter-end="opacity-100 transform translate-y-0"
+                            class="mt-4 pt-4 border-t border-gray-100 text-sm text-gray-600">
+                            <ul class="space-y-2">
+                                <li class="flex items-start gap-2">
+                                    <svg class="w-4 h-4 text-teal-600 mt-0.5 flex-shrink-0" fill="currentColor"
+                                        viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd"
+                                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                    <span>Student internship program (20 seats/year)</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <svg class="w-4 h-4 text-teal-600 mt-0.5 flex-shrink-0" fill="currentColor"
+                                        viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd"
+                                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                    <span>Joint research publications</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <svg class="w-4 h-4 text-teal-600 mt-0.5 flex-shrink-0" fill="currentColor"
+                                        viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd"
+                                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                    <span>Faculty exchange programs</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MOU Card 3 - NGO Partnership -->
+                <div
+                    class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                    <div class="h-48 bg-gradient-to-r from-teal-500 to-emerald-500 relative overflow-hidden">
+                        <!-- Decorative Pattern -->
+                        <div class="absolute inset-0 opacity-10">
+                            <svg class="w-full h-full" viewBox="0 0 100 100" fill="white">
+                                <pattern id="pattern3" x="0" y="0" width="20" height="20"
+                                    patternUnits="userSpaceOnUse">
+                                    <path d="M10 0 L10 20 M0 10 L20 10" stroke="white" stroke-width="0.5" />
+                                    <circle cx="10" cy="10" r="2" fill="white" />
+                                </pattern>
+                                <rect width="100" height="100" fill="url(#pattern3)" />
+                            </svg>
+                        </div>
+
+                        <div
+                            class="absolute top-4 left-4 w-16 h-16 bg-white rounded-2xl shadow-lg flex items-center justify-center">
+                            <svg class="w-10 h-10 text-teal-600" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,4A8,8 0 0,1 20,12A8,8 0 0,1 12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4M12,6A6,6 0 0,0 6,12A6,6 0 0,0 12,18A6,6 0 0,0 18,12A6,6 0 0,0 12,6M12,8A4,4 0 0,1 16,12A4,4 0 0,1 12,16A4,4 0 0,1 8,12A4,4 0 0,1 12,8Z" />
+                            </svg>
+                        </div>
+
+                        <div
+                            class="absolute bottom-4 right-4 bg-white/20 backdrop-blur-sm text-white px-4 py-1 rounded-full text-sm font-semibold border border-white/30">
+                            Non-Profit
+                        </div>
+                    </div>
+
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Abasyn University, Peshawar</h3>
+
+                        <div class="flex items-center gap-2 text-sm text-gray-500 mb-3">
+                            <svg class="w-4 h-4 text-teal-600" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linecap="round" stroke-width="2"
+                                    d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                            </svg>
+                            <span>Signed: Feb 20, 2024</span>
+                            <span>•</span>
+                            <span>Valid: 3 years</span>
+                        </div>
+
+                        <p class="text-gray-600 mb-4 line-clamp-2">
+                            Community outreach partnership focusing on underserved populations, free health camps, and
+                            health awareness programs.
+                        </p>
+
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-teal-50 text-teal-700 px-3 py-1 rounded-full text-sm">Community
+                                Outreach</span>
+                            <span class="bg-teal-50 text-teal-700 px-3 py-1 rounded-full text-sm">Free Camps</span>
+                            <span class="bg-teal-50 text-teal-700 px-3 py-1 rounded-full text-sm">Awareness</span>
+                        </div>
+
+                        <button @click="activeMou = activeMou === 3 ? null : 3"
+                            class="w-full text-left text-teal-600 hover:text-teal-700 font-semibold text-sm flex items-center justify-between group">
+                            <span>View partnership details</span>
+                            <svg class="w-5 h-5 transform transition-transform group-hover:translate-x-1"
+                                :class="{ 'rotate-90': activeMou === 3 }" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linecap="round" stroke-width="2"
+                                    d="M9 5l7 7-7 7" />
+                            </svg>
+                        </button>
+
+                        <div x-show="activeMou === 3" x-transition:enter="transition ease-out duration-300"
+                            x-transition:enter-start="opacity-0 transform -translate-y-2"
+                            x-transition:enter-end="opacity-100 transform translate-y-0"
+                            class="mt-4 pt-4 border-t border-gray-100 text-sm text-gray-600">
+                            <ul class="space-y-2">
+                                <li class="flex items-start gap-2">
+                                    <svg class="w-4 h-4 text-teal-600 mt-0.5 flex-shrink-0" fill="currentColor"
+                                        viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd"
+                                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                    <span>Quarterly free health camps in rural areas</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <svg class="w-4 h-4 text-teal-600 mt-0.5 flex-shrink-0" fill="currentColor"
+                                        viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd"
+                                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                    <span>Health awareness programs in schools</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <svg class="w-4 h-4 text-teal-600 mt-0.5 flex-shrink-0" fill="currentColor"
+                                        viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd"
+                                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                    <span>Subsidized treatments for low-income families</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- View All Partners Button -->
+            <div class="text-center mt-12">
+                <a href=""
+                    class="inline-flex items-center gap-2 bg-teal-600 text-white px-8 py-4 rounded-full font-semibold hover:bg-teal-700 transition-colors shadow-lg hover:shadow-xl">
+                    View All Partners & Collaborations
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                    </svg>
+                </a>
+            </div>
+
+            <!-- Become a Partner CTA -->
+            <div class="mt-16 bg-white rounded-2xl p-8 md:p-12 shadow-xl border border-teal-100">
+                <div class="flex flex-col md:flex-row items-center justify-between gap-8">
+                    <div class="flex items-start gap-4">
+                        <div class="w-16 h-16 bg-teal-100 rounded-full flex items-center justify-center flex-shrink-0">
+                            <svg class="w-8 h-8 text-teal-600" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl md:text-3xl font-bold text-gray-800 mb-2">Interested in Partnering With
+                                Us?</h3>
+                            <p class="text-gray-600 max-w-2xl">Join our network of healthcare partners and make a
+                                difference in community wellness. Let's create meaningful impact together.</p>
+                        </div>
+                    </div>
+                    <a href="mailto:smilehealthclinic.info@gmail.com?subject=Partnership Proposal&body=Dear Smile Health Clinic Team,%0D%0A%0D%0AI am interested in exploring partnership opportunities with your organization.%0D%0A%0D%0A[Please introduce your organization and proposed collaboration]%0D%0A%0D%0AThank you."
+                        class="bg-teal-600 text-white px-8 py-4 rounded-full font-semibold hover:bg-teal-700 transition-colors whitespace-nowrap inline-flex items-center gap-2 shadow-lg">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+                        </svg>
+                        Propose Partnership
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+<section class="py-16 bg-gray-50" id="faq">
+    <div class="container mx-auto px-4">
+        <!-- Section Header -->
+        <div class="text-center mb-12">
+            <span class="text-teal-600 font-semibold text-sm uppercase tracking-wider">Got Questions?</span>
+            <h2 class="text-4xl font-bold text-gray-800 mb-4">Frequently Asked Questions</h2>
+            <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                Find answers to common questions about our services, appointments, and care process
+            </p>
+        </div>
+
+        <!-- FAQ Categories -->
+        <div x-data="{ activeFaqTab: 'general' }" class="max-w-4xl mx-auto">
+            
+            <!-- Category Tabs -->
+            <div class="flex flex-wrap justify-center gap-3 mb-10">
+                <button @click="activeFaqTab = 'general'"
+                    :class="activeFaqTab === 'general'
+                        ? 'bg-teal-600 text-white shadow-lg scale-105 px-6 py-3 rounded-full font-medium'
+                        : 'bg-white text-gray-700 hover:bg-teal-50 px-6 py-3 rounded-full font-medium shadow-sm'">
+                    General
+                </button>
+                <button @click="activeFaqTab = 'appointments'"
+                    :class="activeFaqTab === 'appointments'
+                        ? 'bg-teal-600 text-white shadow-lg scale-105 px-6 py-3 rounded-full font-medium'
+                        : 'bg-white text-gray-700 hover:bg-teal-50 px-6 py-3 rounded-full font-medium shadow-sm'">
+                    Appointments
+                </button>
+                <button @click="activeFaqTab = 'services'"
+                    :class="activeFaqTab === 'services'
+                        ? 'bg-teal-600 text-white shadow-lg scale-105 px-6 py-3 rounded-full font-medium'
+                        : 'bg-white text-gray-700 hover:bg-teal-50 px-6 py-3 rounded-full font-medium shadow-sm'">
+                    Services & Pricing
+                </button>
+                <button @click="activeFaqTab = 'insurance'"
+                    :class="activeFaqTab === 'insurance'
+                        ? 'bg-teal-600 text-white shadow-lg scale-105 px-6 py-3 rounded-full font-medium'
+                        : 'bg-white text-gray-700 hover:bg-teal-50 px-6 py-3 rounded-full font-medium shadow-sm'">
+                    Insurance & Payment
+                </button>
+            </div>
+
+            <!-- General FAQs -->
+            <div x-show="activeFaqTab === 'general'" x-transition:enter="transition ease-out duration-300"
+                x-transition:enter-start="opacity-0 transform translate-y-4"
+                x-transition:enter-end="opacity-100 transform translate-y-0">
+                
+                <div class="space-y-4">
+                    <!-- FAQ Item 1 -->
+                    <div x-data="{ open: false }" class="bg-white rounded-2xl shadow-md hover:shadow-lg transition-shadow">
+                        <button @click="open = !open" 
+                            class="w-full px-6 py-5 text-left flex items-center justify-between focus:outline-none">
+                            <span class="text-lg font-semibold text-gray-800">What are your clinic's operating hours?</span>
+                            <svg class="w-6 h-6 text-teal-600 transform transition-transform duration-300" 
+                                :class="{ 'rotate-180': open }" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linecap="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div x-show="open" x-collapse class="px-6 pb-5">
+                            <p class="text-gray-600 leading-relaxed">
+                                We're open Monday to Friday from 9:00 AM to 8:00 PM, and Saturdays from 10:00 AM to 4:00 PM. 
+                                We remain closed on Sundays and public holidays. Emergency consultations are available by appointment.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 2 -->
+                    <div x-data="{ open: false }" class="bg-white rounded-2xl shadow-md hover:shadow-lg transition-shadow">
+                        <button @click="open = !open" 
+                            class="w-full px-6 py-5 text-left flex items-center justify-between focus:outline-none">
+                            <span class="text-lg font-semibold text-gray-800">Do I need a referral to book an appointment?</span>
+                            <svg class="w-6 h-6 text-teal-600 transform transition-transform duration-300" 
+                                :class="{ 'rotate-180': open }" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linecap="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div x-show="open" x-collapse class="px-6 pb-5">
+                            <p class="text-gray-600 leading-relaxed">
+                                No referral is needed for most of our services. However, for specialized consultations 
+                                or insurance claims, a referral from your primary physician might be required. Our team 
+                                can guide you based on your specific needs.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 3 -->
+                    <div x-data="{ open: false }" class="bg-white rounded-2xl shadow-md hover:shadow-lg transition-shadow">
+                        <button @click="open = !open" 
+                            class="w-full px-6 py-5 text-left flex items-center justify-between focus:outline-none">
+                            <span class="text-lg font-semibold text-gray-800">Is parking available at your facility?</span>
+                            <svg class="w-6 h-6 text-teal-600 transform transition-transform duration-300" 
+                                :class="{ 'rotate-180': open }" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linecap="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div x-show="open" x-collapse class="px-6 pb-5">
+                            <p class="text-gray-600 leading-relaxed">
+                                Yes, we have a dedicated parking area for our patients and visitors. The parking is free 
+                                of charge and is monitored by security staff during operating hours.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 4 -->
+                    <div x-data="{ open: false }" class="bg-white rounded-2xl shadow-md hover:shadow-lg transition-shadow">
+                        <button @click="open = !open" 
+                            class="w-full px-6 py-5 text-left flex items-center justify-between focus:outline-none">
+                            <span class="text-lg font-semibold text-gray-800">Are your facilities accessible for people with disabilities?</span>
+                            <svg class="w-6 h-6 text-teal-600 transform transition-transform duration-300" 
+                                :class="{ 'rotate-180': open }" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linecap="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div x-show="open" x-collapse class="px-6 pb-5">
+                            <p class="text-gray-600 leading-relaxed">
+                                Absolutely. Our clinic is wheelchair accessible with ramps, wide doorways, and accessible 
+                                washrooms. Please let us know in advance if you require any specific accommodations.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Appointments FAQs -->
+            <div x-show="activeFaqTab === 'appointments'" x-transition:enter="transition ease-out duration-300"
+                x-transition:enter-start="opacity-0 transform translate-y-4"
+                x-transition:enter-end="opacity-100 transform translate-y-0">
+                
+                <div class="space-y-4">
+                    <!-- FAQ Item 1 -->
+                    <div x-data="{ open: false }" class="bg-white rounded-2xl shadow-md hover:shadow-lg transition-shadow">
+                        <button @click="open = !open" 
+                            class="w-full px-6 py-5 text-left flex items-center justify-between focus:outline-none">
+                            <span class="text-lg font-semibold text-gray-800">How do I schedule an appointment?</span>
+                            <svg class="w-6 h-6 text-teal-600 transform transition-transform duration-300" 
+                                :class="{ 'rotate-180': open }" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linecap="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div x-show="open" x-collapse class="px-6 pb-5">
+                            <p class="text-gray-600 leading-relaxed">
+                                You can book appointments through multiple channels:
+                            </p>
+                            <ul class="mt-2 space-y-2 text-gray-600">
+                                <li class="flex items-start gap-2">
+                                    <svg class="w-5 h-5 text-teal-600 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                    </svg>
+                                    <span>Call us at +92 333 3893960</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <svg class="w-5 h-5 text-teal-600 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                    </svg>
+                                    <span>Use our online booking portal (coming soon)</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <svg class="w-5 h-5 text-teal-600 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                    </svg>
+                                    <span>Email us at appointments@smilehealthclinic.com</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <svg class="w-5 h-5 text-teal-600 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                    </svg>
+                                    <span>Visit our reception desk in person</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 2 -->
+                    <div x-data="{ open: false }" class="bg-white rounded-2xl shadow-md hover:shadow-lg transition-shadow">
+                        <button @click="open = !open" 
+                            class="w-full px-6 py-5 text-left flex items-center justify-between focus:outline-none">
+                            <span class="text-lg font-semibold text-gray-800">What is your cancellation policy?</span>
+                            <svg class="w-6 h-6 text-teal-600 transform transition-transform duration-300" 
+                                :class="{ 'rotate-180': open }" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linecap="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div x-show="open" x-collapse class="px-6 pb-5">
+                            <p class="text-gray-600 leading-relaxed">
+                                We kindly request at least 24 hours' notice for cancellations or rescheduling. 
+                                Late cancellations (less than 24 hours) may incur a fee of $25. No-shows without 
+                                prior notice will be charged 50% of the consultation fee.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 3 -->
+                    <div x-data="{ open: false }" class="bg-white rounded-2xl shadow-md hover:shadow-lg transition-shadow">
+                        <button @click="open = !open" 
+                            class="w-full px-6 py-5 text-left flex items-center justify-between focus:outline-none">
+                            <span class="text-lg font-semibold text-gray-800">How early should I arrive for my appointment?</span>
+                            <svg class="w-6 h-6 text-teal-600 transform transition-transform duration-300" 
+                                :class="{ 'rotate-180': open }" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linecap="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div x-show="open" x-collapse class="px-6 pb-5">
+                            <p class="text-gray-600 leading-relaxed">
+                                We recommend arriving 10-15 minutes before your scheduled appointment time to complete 
+                                any necessary paperwork. For first-time visitors, please arrive 20 minutes early.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 4 -->
+                    <div x-data="{ open: false }" class="bg-white rounded-2xl shadow-md hover:shadow-lg transition-shadow">
+                        <button @click="open = !open" 
+                            class="w-full px-6 py-5 text-left flex items-center justify-between focus:outline-none">
+                            <span class="text-lg font-semibold text-gray-800">Can I book appointments for multiple family members?</span>
+                            <svg class="w-6 h-6 text-teal-600 transform transition-transform duration-300" 
+                                :class="{ 'rotate-180': open }" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linecap="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div x-show="open" x-collapse class="px-6 pb-5">
+                            <p class="text-gray-600 leading-relaxed">
+                                Yes, absolutely. You can schedule appointments for different family members in one call. 
+                        Please have each person's basic information ready when booking.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Services & Pricing FAQs -->
+            <div x-show="activeFaqTab === 'services'" x-transition:enter="transition ease-out duration-300"
+                x-transition:enter-start="opacity-0 transform translate-y-4"
+                x-transition:enter-end="opacity-100 transform translate-y-0">
+                
+                <div class="space-y-4">
+                    <!-- FAQ Item 1 -->
+                    <div x-data="{ open: false }" class="bg-white rounded-2xl shadow-md hover:shadow-lg transition-shadow">
+                        <button @click="open = !open" 
+                            class="w-full px-6 py-5 text-left flex items-center justify-between focus:outline-none">
+                            <span class="text-lg font-semibold text-gray-800">What services do you offer for children with special needs?</span>
+                            <svg class="w-6 h-6 text-teal-600 transform transition-transform duration-300" 
+                                :class="{ 'rotate-180': open }" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linecap="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div x-show="open" x-collapse class="px-6 pb-5">
+                            <p class="text-gray-600 leading-relaxed">
+                                Our pediatric special needs services include:
+                            </p>
+                            <ul class="mt-2 grid grid-cols-2 gap-2 text-gray-600">
+                                <li class="flex items-center gap-2">
+                                    <svg class="w-4 h-4 text-teal-600" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                    </svg>
+                                    <span>ABA Therapy</span>
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <svg class="w-4 h-4 text-teal-600" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                    </svg>
+                                    <span>Speech Therapy</span>
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <svg class="w-4 h-4 text-teal-600" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                    </svg>
+                                    <span>Occupational Therapy</span>
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <svg class="w-4 h-4 text-teal-600" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                    </svg>
+                                    <span>Social Skills Groups</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 2 -->
+                    <div x-data="{ open: false }" class="bg-white rounded-2xl shadow-md hover:shadow-lg transition-shadow">
+                        <button @click="open = !open" 
+                            class="w-full px-6 py-5 text-left flex items-center justify-between focus:outline-none">
+                            <span class="text-lg font-semibold text-gray-800">How much does a typical consultation cost?</span>
+                            <svg class="w-6 h-6 text-teal-600 transform transition-transform duration-300" 
+                                :class="{ 'rotate-180': open }" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linecap="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div x-show="open" x-collapse class="px-6 pb-5">
+                            <p class="text-gray-600 leading-relaxed">
+                                Consultation fees vary by service:
+                            </p>
+                            <div class="mt-3 space-y-2">
+                                <div class="flex justify-between items-center border-b pb-2">
+                                    <span class="text-gray-700">Initial Psychological Assessment</span>
+                                    <span class="font-semibold text-teal-600">---</span>
+                                </div>
+                                <div class="flex justify-between items-center border-b pb-2">
+                                    <span class="text-gray-700">Physiotherapy Session</span>
+                                    <span class="font-semibold text-teal-600">---</span>
+                                </div>
+                                <div class="flex justify-between items-center border-b pb-2">
+                                    <span class="text-gray-700">Nutrition Consultation</span>
+                                    <span class="font-semibold text-teal-600">---</span>
+                                </div>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-gray-700">Therapy Sessions (Children)</span>
+                                    <span class="font-semibold text-teal-600">---</span>
+                                </div>
+                            </div>
+                            <p class="text-sm text-gray-500 mt-3">*Package discounts available for multiple sessions</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 3 -->
+                    <div x-data="{ open: false }" class="bg-white rounded-2xl shadow-md hover:shadow-lg transition-shadow">
+                        <button @click="open = !open" 
+                            class="w-full px-6 py-5 text-left flex items-center justify-between focus:outline-none">
+                            <span class="text-lg font-semibold text-gray-800">Do you offer online/virtual consultations?</span>
+                            <svg class="w-6 h-6 text-teal-600 transform transition-transform duration-300" 
+                                :class="{ 'rotate-180': open }" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linecap="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div x-show="open" x-collapse class="px-6 pb-5">
+                            <p class="text-gray-600 leading-relaxed">
+                                Yes, we offer secure video consultations for select services including psychological 
+                                counseling, nutritional guidance, and follow-up appointments. Please specify your 
+                                preference for virtual consultation when booking.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Insurance & Payment FAQs -->
+            <div x-show="activeFaqTab === 'insurance'" x-transition:enter="transition ease-out duration-300"
+                x-transition:enter-start="opacity-0 transform translate-y-4"
+                x-transition:enter-end="opacity-100 transform translate-y-0">
+                
+                <div class="space-y-4">
+                    
+                </div>
+            </div>
+        </div>
+
+        <!-- Still Have Questions CTA -->
+        <div class="text-center mt-12">
+            <div class="bg-gradient-to-r from-teal-50 to-blue-50 rounded-2xl p-8 max-w-3xl mx-auto">
+                <h3 class="text-2xl font-bold text-gray-800 mb-3">Still Have Questions?</h3>
+                <p class="text-gray-600 mb-6">We're here to help! Reach out to us anytime.</p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="tel:+923333893960" 
+                       class="inline-flex items-center justify-center gap-2 bg-white text-teal-600 px-6 py-3 rounded-full font-semibold hover:bg-teal-50 transition-colors border border-teal-200">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linecap="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                        </svg>
+                        Call Us
+                    </a>
+                    <a href="mailto:smilehealthclinic.info@gmail.com?subject=Question%20from%20Website" 
+                       class="inline-flex items-center justify-center gap-2 bg-teal-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-teal-700 transition-colors">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linecap="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                        </svg>
+                        Email Us
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
     <!-- Team Preview -->
     <x-doctor-profile />
 

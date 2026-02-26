@@ -17,7 +17,7 @@
 
                 <!-- Desktop Menu -->
                 <div class="hidden md:flex items-center space-x-8">
-                    <a href="#" class="text-gray-700 hover:text-[#37A47D] font-medium transition duration-300">Home</a>
+                    <a href="/" class="text-gray-700 hover:text-[#37A47D] font-medium transition duration-300">Home</a>
                     <div class="relative group">
                         <button class="text-gray-700 hover:text-[#37A47D] font-medium transition duration-300 flex items-center">
                             Services
@@ -89,7 +89,7 @@
             <!-- Mobile Menu -->
             <div x-show="isMenuOpen" x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0 transform -translate-y-4" x-transition:enter-end="opacity-100 transform translate-y-0" x-transition:leave="transition ease-in duration-200" x-transition:leave-start="opacity-100 transform translate-y-0" x-transition:leave-end="opacity-0 transform -translate-y-4" class="md:hidden py-4 border-t border-gray-200">
                 <div class="space-y-4">
-                    <a href="#" class="block text-gray-700 hover:text-[#37A47D] font-medium py-2">Home</a>
+                    <a href="/" class="block text-gray-700 hover:text-[#37A47D] font-medium py-2">Home</a>
                     <a href="#services" class="block text-gray-700 hover:text-[#37A47D] font-medium py-2">Services</a>
                     <a href="#" class="block text-gray-700 hover:text-[#37A47D] font-medium py-2">About</a>
                     <a href="/team" class="block text-gray-700 hover:text-[#37A47D] font-medium py-2">Team</a>
