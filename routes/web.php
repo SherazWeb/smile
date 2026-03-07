@@ -8,6 +8,10 @@ use App\Livewire\EventShow;
 
 Route::get('/', Home::class);
 
+Route::get('/about', function(){
+    return view('about');
+});
+
 Route::get('/events', Events::class)->name('events.index');
 
 Route::get('/academic-services', AcademicServices::class);

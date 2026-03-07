@@ -3,6 +3,160 @@
     <!-- Hero Section -->
     <x-hero-section />
 
+    <!-- Journey Graph Section -->
+<section class="py-16 bg-gradient-to-b from-white to-teal-50" id="journey">
+    <div class="container mx-auto px-4">
+        <!-- Section Header -->
+        <div class="text-center mb-12">
+            <span class="text-teal-600 font-semibold text-sm uppercase tracking-wider">Our Growth Story</span>
+            <h2 class="text-4xl font-bold text-gray-800 mb-4">The Journey So Far</h2>
+            <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                From a single clinic to comprehensive care - expanding our services to serve you better
+            </p>
+        </div>
+
+        <!-- Graph/Timeline Visualization -->
+        <div class="relative max-w-5xl mx-auto">
+            <!-- Horizontal Timeline Bar (Desktop) -->
+            <div class="hidden md:block absolute top-1/2 left-0 w-full h-1 bg-gradient-to-r from-teal-200 via-teal-400 to-teal-200 transform -translate-y-1/2 rounded-full"></div>
+            
+            <!-- Milestone Nodes -->
+            <div class="relative flex flex-col md:flex-row justify-between items-start md:items-center gap-8 md:gap-4">
+                
+                <!-- 2016 - Foundation -->
+                <div class="relative flex md:flex-col items-center gap-4 md:gap-6 w-full md:w-auto group">
+                    <!-- Mobile connector line (vertical) -->
+                    <div class="md:hidden absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-teal-300 to-teal-500"></div>
+                    
+                    <!-- Node Icon -->
+                    <div class="relative z-10 flex-shrink-0">
+                        <div class="w-16 h-16 bg-teal-600 rounded-2xl shadow-xl flex items-center justify-center transform group-hover:scale-110 group-hover:rotate-3 transition-all duration-300">
+                            <span class="text-white font-bold text-xl">2016</span>
+                        </div>
+                        <!-- Pulse Effect -->
+                        <div class="absolute inset-0 bg-teal-400 rounded-2xl opacity-0 group-hover:opacity-30 animate-ping"></div>
+                    </div>
+                    
+                    <!-- Content -->
+                    <div class="flex-1 md:text-center">
+                        <div class="bg-white rounded-xl shadow-lg p-5 md:p-4 border-l-4 md:border-l-0 md:border-t-4 border-teal-600 hover:shadow-xl transition-all duration-300">
+                            <div class="flex items-center gap-2 md:justify-center mb-2">
+                                <svg class="w-5 h-5 text-teal-600" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                                </svg>
+                                <h3 class="font-bold text-gray-800">Psychological Clinic</h3>
+                            </div>
+                            <p class="text-sm text-gray-600 mb-2">Started with mental health services</p>
+                            <div class="flex flex-wrap gap-1 md:justify-center">
+                                <span class="bg-teal-50 text-teal-700 px-2 py-0.5 rounded-full text-xs">Counseling</span>
+                                <span class="bg-teal-50 text-teal-700 px-2 py-0.5 rounded-full text-xs">Therapy</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2018 - Expansion -->
+                <div class="relative flex md:flex-col items-center gap-4 md:gap-6 w-full md:w-auto group">
+                    <!-- Mobile connector line (vertical) -->
+                    <div class="md:hidden absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-teal-300 to-teal-500"></div>
+                    
+                    <!-- Node Icon -->
+                    <div class="relative z-10 flex-shrink-0">
+                        <div class="w-16 h-16 bg-teal-600 rounded-2xl shadow-xl flex items-center justify-center transform group-hover:scale-110 group-hover:-rotate-3 transition-all duration-300">
+                            <span class="text-white font-bold text-xl">2018</span>
+                        </div>
+                        <div class="absolute inset-0 bg-teal-400 rounded-2xl opacity-0 group-hover:opacity-30 animate-ping"></div>
+                    </div>
+                    
+                    <!-- Content -->
+                    <div class="flex-1 md:text-center">
+                        <div class="bg-white rounded-xl shadow-lg p-5 md:p-4 border-l-4 md:border-l-0 md:border-t-4 border-teal-600 hover:shadow-xl transition-all duration-300">
+                            <div class="flex items-center gap-2 md:justify-center mb-2">
+                                <svg class="w-5 h-5 text-teal-600" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 12c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm6-1.8C18 6.57 15.35 4 12 4s-6 2.57-6 6.2c0 2.34 1.95 5.44 6 9.14 4.05-3.7 6-6.8 6-9.14z"/>
+                                </svg>
+                                <h3 class="font-bold text-gray-800">Comprehensive Care</h3>
+                            </div>
+                            <p class="text-sm text-gray-600 mb-2">Added Physiocare, Nutrition & Speech</p>
+                            <div class="flex flex-wrap gap-1 md:justify-center">
+                                <span class="bg-teal-50 text-teal-700 px-2 py-0.5 rounded-full text-xs">Physiotherapy</span>
+                                <span class="bg-teal-50 text-teal-700 px-2 py-0.5 rounded-full text-xs">Nutrition</span>
+                                <span class="bg-teal-50 text-teal-700 px-2 py-0.5 rounded-full text-xs">Speech</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2023 - Children Care -->
+                <div class="relative flex md:flex-col items-center gap-4 md:gap-6 w-full md:w-auto group">
+                    <!-- Node Icon -->
+                    <div class="relative z-10 flex-shrink-0">
+                        <div class="w-16 h-16 bg-gradient-to-r from-teal-500 to-teal-600 rounded-2xl shadow-xl flex items-center justify-center transform group-hover:scale-110 group-hover:rotate-3 transition-all duration-300">
+                            <span class="text-white font-bold text-xl">2023</span>
+                        </div>
+                        <div class="absolute inset-0 bg-teal-400 rounded-2xl opacity-0 group-hover:opacity-30 animate-ping"></div>
+                    </div>
+                    
+                    <!-- Content -->
+                    <div class="flex-1 md:text-center">
+                        <div class="bg-gradient-to-br from-white to-teal-50 rounded-xl shadow-lg p-5 md:p-4 border-l-4 md:border-l-0 md:border-t-4 border-teal-600 hover:shadow-xl transition-all duration-300">
+                            <div class="flex items-center gap-2 md:justify-center mb-2">
+                                <svg class="w-5 h-5 text-teal-600" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/>
+                                </svg>
+                                <h3 class="font-bold text-gray-800">Children Care Clinic</h3>
+                            </div>
+                            <p class="text-sm text-gray-600 mb-2">Specialized pediatric wing launched</p>
+                            <div class="flex flex-wrap gap-1 md:justify-center">
+                                <span class="bg-teal-600 text-white px-2 py-0.5 rounded-full text-xs">ABA Therapy</span>
+                                <span class="bg-teal-600 text-white px-2 py-0.5 rounded-full text-xs">Early Intervention</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Growth Indicators (Small Graph Elements) -->
+            <div class="mt-12 grid grid-cols-3 gap-4 max-w-2xl mx-auto">
+                <div class="text-center">
+                    <div class="h-2 w-full bg-teal-100 rounded-full mb-2 overflow-hidden">
+                        <div class="h-full w-1/3 bg-teal-400 rounded-full"></div>
+                    </div>
+                    <span class="text-xs text-gray-500">2016</span>
+                </div>
+                <div class="text-center">
+                    <div class="h-2 w-full bg-teal-100 rounded-full mb-2 overflow-hidden">
+                        <div class="h-full w-2/3 bg-teal-500 rounded-full"></div>
+                    </div>
+                    <span class="text-xs text-gray-500">2018</span>
+                </div>
+                <div class="text-center">
+                    <div class="h-2 w-full bg-teal-100 rounded-full mb-2 overflow-hidden">
+                        <div class="h-full w-full bg-teal-600 rounded-full"></div>
+                    </div>
+                    <span class="text-xs text-gray-500">2023</span>
+                </div>
+            </div>
+
+            <!-- Quick Stats Pills -->
+            <div class="mt-10 flex flex-wrap justify-center gap-3">
+                <div class="bg-white px-4 py-2 rounded-full shadow-md flex items-center gap-2">
+                    <span class="w-2 h-2 bg-teal-600 rounded-full"></span>
+                    <span class="text-sm font-medium text-gray-700">3 Psychologists → 20+ Specialists</span>
+                </div>
+                <div class="bg-white px-4 py-2 rounded-full shadow-md flex items-center gap-2">
+                    <span class="w-2 h-2 bg-teal-600 rounded-full"></span>
+                    <span class="text-sm font-medium text-gray-700">1 Service → 6 Services</span>
+                </div>
+                <div class="bg-white px-4 py-2 rounded-full shadow-md flex items-center gap-2">
+                    <span class="w-2 h-2 bg-teal-600 rounded-full"></span>
+                    <span class="text-sm font-medium text-gray-700">500+ → 5000+ Lives</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
     <!-- Services Section -->
     <section class="py-16 bg-gray-50" id="services">
         <div class="container mx-auto px-4">
@@ -37,7 +191,7 @@
 
                         <!-- Service Image -->
                         <div class="h-96 md:h-auto">
-                            <img :src="service.image" :alt="service.name" class="w-full h-full object-cover">
+                            <img :src="service.image" :alt="service.name" class="w-full h-full object-contain">
                         </div>
 
                         <!-- Service Details -->
@@ -629,377 +783,456 @@
     </section>
 
     <!-- FAQ Section -->
-<section class="py-16 bg-gray-50" id="faq">
-    <div class="container mx-auto px-4">
-        <!-- Section Header -->
-        <div class="text-center mb-12">
-            <span class="text-teal-600 font-semibold text-sm uppercase tracking-wider">Got Questions?</span>
-            <h2 class="text-4xl font-bold text-gray-800 mb-4">Frequently Asked Questions</h2>
-            <p class="text-lg text-gray-600 max-w-2xl mx-auto">
-                Find answers to common questions about our services, appointments, and care process
-            </p>
-        </div>
-
-        <!-- FAQ Categories -->
-        <div x-data="{ activeFaqTab: 'general' }" class="max-w-4xl mx-auto">
-            
-            <!-- Category Tabs -->
-            <div class="flex flex-wrap justify-center gap-3 mb-10">
-                <button @click="activeFaqTab = 'general'"
-                    :class="activeFaqTab === 'general'
-                        ? 'bg-teal-600 text-white shadow-lg scale-105 px-6 py-3 rounded-full font-medium'
-                        : 'bg-white text-gray-700 hover:bg-teal-50 px-6 py-3 rounded-full font-medium shadow-sm'">
-                    General
-                </button>
-                <button @click="activeFaqTab = 'appointments'"
-                    :class="activeFaqTab === 'appointments'
-                        ? 'bg-teal-600 text-white shadow-lg scale-105 px-6 py-3 rounded-full font-medium'
-                        : 'bg-white text-gray-700 hover:bg-teal-50 px-6 py-3 rounded-full font-medium shadow-sm'">
-                    Appointments
-                </button>
-                <button @click="activeFaqTab = 'services'"
-                    :class="activeFaqTab === 'services'
-                        ? 'bg-teal-600 text-white shadow-lg scale-105 px-6 py-3 rounded-full font-medium'
-                        : 'bg-white text-gray-700 hover:bg-teal-50 px-6 py-3 rounded-full font-medium shadow-sm'">
-                    Services & Pricing
-                </button>
-                <button @click="activeFaqTab = 'insurance'"
-                    :class="activeFaqTab === 'insurance'
-                        ? 'bg-teal-600 text-white shadow-lg scale-105 px-6 py-3 rounded-full font-medium'
-                        : 'bg-white text-gray-700 hover:bg-teal-50 px-6 py-3 rounded-full font-medium shadow-sm'">
-                    Insurance & Payment
-                </button>
+    <section class="py-16 bg-gray-50" id="faq">
+        <div class="container mx-auto px-4">
+            <!-- Section Header -->
+            <div class="text-center mb-12">
+                <span class="text-teal-600 font-semibold text-sm uppercase tracking-wider">Got Questions?</span>
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Frequently Asked Questions</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    Find answers to common questions about our services, appointments, and care process
+                </p>
             </div>
 
-            <!-- General FAQs -->
-            <div x-show="activeFaqTab === 'general'" x-transition:enter="transition ease-out duration-300"
-                x-transition:enter-start="opacity-0 transform translate-y-4"
-                x-transition:enter-end="opacity-100 transform translate-y-0">
-                
-                <div class="space-y-4">
-                    <!-- FAQ Item 1 -->
-                    <div x-data="{ open: false }" class="bg-white rounded-2xl shadow-md hover:shadow-lg transition-shadow">
-                        <button @click="open = !open" 
-                            class="w-full px-6 py-5 text-left flex items-center justify-between focus:outline-none">
-                            <span class="text-lg font-semibold text-gray-800">What are your clinic's operating hours?</span>
-                            <svg class="w-6 h-6 text-teal-600 transform transition-transform duration-300" 
-                                :class="{ 'rotate-180': open }" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linecap="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                            </svg>
-                        </button>
-                        <div x-show="open" x-collapse class="px-6 pb-5">
-                            <p class="text-gray-600 leading-relaxed">
-                                We're open Monday to Friday from 9:00 AM to 8:00 PM, and Saturdays from 10:00 AM to 4:00 PM. 
-                                We remain closed on Sundays and public holidays. Emergency consultations are available by appointment.
-                            </p>
-                        </div>
-                    </div>
+            <!-- FAQ Categories -->
+            <div x-data="{ activeFaqTab: 'general' }" class="max-w-4xl mx-auto">
 
-                    <!-- FAQ Item 2 -->
-                    <div x-data="{ open: false }" class="bg-white rounded-2xl shadow-md hover:shadow-lg transition-shadow">
-                        <button @click="open = !open" 
-                            class="w-full px-6 py-5 text-left flex items-center justify-between focus:outline-none">
-                            <span class="text-lg font-semibold text-gray-800">Do I need a referral to book an appointment?</span>
-                            <svg class="w-6 h-6 text-teal-600 transform transition-transform duration-300" 
-                                :class="{ 'rotate-180': open }" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linecap="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                            </svg>
-                        </button>
-                        <div x-show="open" x-collapse class="px-6 pb-5">
-                            <p class="text-gray-600 leading-relaxed">
-                                No referral is needed for most of our services. However, for specialized consultations 
-                                or insurance claims, a referral from your primary physician might be required. Our team 
-                                can guide you based on your specific needs.
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- FAQ Item 3 -->
-                    <div x-data="{ open: false }" class="bg-white rounded-2xl shadow-md hover:shadow-lg transition-shadow">
-                        <button @click="open = !open" 
-                            class="w-full px-6 py-5 text-left flex items-center justify-between focus:outline-none">
-                            <span class="text-lg font-semibold text-gray-800">Is parking available at your facility?</span>
-                            <svg class="w-6 h-6 text-teal-600 transform transition-transform duration-300" 
-                                :class="{ 'rotate-180': open }" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linecap="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                            </svg>
-                        </button>
-                        <div x-show="open" x-collapse class="px-6 pb-5">
-                            <p class="text-gray-600 leading-relaxed">
-                                Yes, we have a dedicated parking area for our patients and visitors. The parking is free 
-                                of charge and is monitored by security staff during operating hours.
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- FAQ Item 4 -->
-                    <div x-data="{ open: false }" class="bg-white rounded-2xl shadow-md hover:shadow-lg transition-shadow">
-                        <button @click="open = !open" 
-                            class="w-full px-6 py-5 text-left flex items-center justify-between focus:outline-none">
-                            <span class="text-lg font-semibold text-gray-800">Are your facilities accessible for people with disabilities?</span>
-                            <svg class="w-6 h-6 text-teal-600 transform transition-transform duration-300" 
-                                :class="{ 'rotate-180': open }" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linecap="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                            </svg>
-                        </button>
-                        <div x-show="open" x-collapse class="px-6 pb-5">
-                            <p class="text-gray-600 leading-relaxed">
-                                Absolutely. Our clinic is wheelchair accessible with ramps, wide doorways, and accessible 
-                                washrooms. Please let us know in advance if you require any specific accommodations.
-                            </p>
-                        </div>
-                    </div>
+                <!-- Category Tabs -->
+                <div class="flex flex-wrap justify-center gap-3 mb-10">
+                    <button @click="activeFaqTab = 'general'"
+                        :class="activeFaqTab === 'general'
+                            ?
+                            'bg-teal-600 text-white shadow-lg scale-105 px-6 py-3 rounded-full font-medium' :
+                            'bg-white text-gray-700 hover:bg-teal-50 px-6 py-3 rounded-full font-medium shadow-sm'">
+                        General
+                    </button>
+                    <button @click="activeFaqTab = 'appointments'"
+                        :class="activeFaqTab === 'appointments'
+                            ?
+                            'bg-teal-600 text-white shadow-lg scale-105 px-6 py-3 rounded-full font-medium' :
+                            'bg-white text-gray-700 hover:bg-teal-50 px-6 py-3 rounded-full font-medium shadow-sm'">
+                        Appointments
+                    </button>
+                    <button @click="activeFaqTab = 'services'"
+                        :class="activeFaqTab === 'services'
+                            ?
+                            'bg-teal-600 text-white shadow-lg scale-105 px-6 py-3 rounded-full font-medium' :
+                            'bg-white text-gray-700 hover:bg-teal-50 px-6 py-3 rounded-full font-medium shadow-sm'">
+                        Services & Pricing
+                    </button>
+                    <button @click="activeFaqTab = 'insurance'"
+                        :class="activeFaqTab === 'insurance'
+                            ?
+                            'bg-teal-600 text-white shadow-lg scale-105 px-6 py-3 rounded-full font-medium' :
+                            'bg-white text-gray-700 hover:bg-teal-50 px-6 py-3 rounded-full font-medium shadow-sm'">
+                        Insurance & Payment
+                    </button>
                 </div>
-            </div>
 
-            <!-- Appointments FAQs -->
-            <div x-show="activeFaqTab === 'appointments'" x-transition:enter="transition ease-out duration-300"
-                x-transition:enter-start="opacity-0 transform translate-y-4"
-                x-transition:enter-end="opacity-100 transform translate-y-0">
-                
-                <div class="space-y-4">
-                    <!-- FAQ Item 1 -->
-                    <div x-data="{ open: false }" class="bg-white rounded-2xl shadow-md hover:shadow-lg transition-shadow">
-                        <button @click="open = !open" 
-                            class="w-full px-6 py-5 text-left flex items-center justify-between focus:outline-none">
-                            <span class="text-lg font-semibold text-gray-800">How do I schedule an appointment?</span>
-                            <svg class="w-6 h-6 text-teal-600 transform transition-transform duration-300" 
-                                :class="{ 'rotate-180': open }" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linecap="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                            </svg>
-                        </button>
-                        <div x-show="open" x-collapse class="px-6 pb-5">
-                            <p class="text-gray-600 leading-relaxed">
-                                You can book appointments through multiple channels:
-                            </p>
-                            <ul class="mt-2 space-y-2 text-gray-600">
-                                <li class="flex items-start gap-2">
-                                    <svg class="w-5 h-5 text-teal-600 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                                    </svg>
-                                    <span>Call us at +92 333 3893960</span>
-                                </li>
-                                <li class="flex items-start gap-2">
-                                    <svg class="w-5 h-5 text-teal-600 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                                    </svg>
-                                    <span>Use our online booking portal (coming soon)</span>
-                                </li>
-                                <li class="flex items-start gap-2">
-                                    <svg class="w-5 h-5 text-teal-600 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                                    </svg>
-                                    <span>Email us at appointments@smilehealthclinic.com</span>
-                                </li>
-                                <li class="flex items-start gap-2">
-                                    <svg class="w-5 h-5 text-teal-600 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                                    </svg>
-                                    <span>Visit our reception desk in person</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+                <!-- General FAQs -->
+                <div x-show="activeFaqTab === 'general'" x-transition:enter="transition ease-out duration-300"
+                    x-transition:enter-start="opacity-0 transform translate-y-4"
+                    x-transition:enter-end="opacity-100 transform translate-y-0">
 
-                    <!-- FAQ Item 2 -->
-                    <div x-data="{ open: false }" class="bg-white rounded-2xl shadow-md hover:shadow-lg transition-shadow">
-                        <button @click="open = !open" 
-                            class="w-full px-6 py-5 text-left flex items-center justify-between focus:outline-none">
-                            <span class="text-lg font-semibold text-gray-800">What is your cancellation policy?</span>
-                            <svg class="w-6 h-6 text-teal-600 transform transition-transform duration-300" 
-                                :class="{ 'rotate-180': open }" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linecap="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                            </svg>
-                        </button>
-                        <div x-show="open" x-collapse class="px-6 pb-5">
-                            <p class="text-gray-600 leading-relaxed">
-                                We kindly request at least 24 hours' notice for cancellations or rescheduling. 
-                                Late cancellations (less than 24 hours) may incur a fee of $25. No-shows without 
-                                prior notice will be charged 50% of the consultation fee.
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- FAQ Item 3 -->
-                    <div x-data="{ open: false }" class="bg-white rounded-2xl shadow-md hover:shadow-lg transition-shadow">
-                        <button @click="open = !open" 
-                            class="w-full px-6 py-5 text-left flex items-center justify-between focus:outline-none">
-                            <span class="text-lg font-semibold text-gray-800">How early should I arrive for my appointment?</span>
-                            <svg class="w-6 h-6 text-teal-600 transform transition-transform duration-300" 
-                                :class="{ 'rotate-180': open }" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linecap="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                            </svg>
-                        </button>
-                        <div x-show="open" x-collapse class="px-6 pb-5">
-                            <p class="text-gray-600 leading-relaxed">
-                                We recommend arriving 10-15 minutes before your scheduled appointment time to complete 
-                                any necessary paperwork. For first-time visitors, please arrive 20 minutes early.
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- FAQ Item 4 -->
-                    <div x-data="{ open: false }" class="bg-white rounded-2xl shadow-md hover:shadow-lg transition-shadow">
-                        <button @click="open = !open" 
-                            class="w-full px-6 py-5 text-left flex items-center justify-between focus:outline-none">
-                            <span class="text-lg font-semibold text-gray-800">Can I book appointments for multiple family members?</span>
-                            <svg class="w-6 h-6 text-teal-600 transform transition-transform duration-300" 
-                                :class="{ 'rotate-180': open }" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linecap="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                            </svg>
-                        </button>
-                        <div x-show="open" x-collapse class="px-6 pb-5">
-                            <p class="text-gray-600 leading-relaxed">
-                                Yes, absolutely. You can schedule appointments for different family members in one call. 
-                        Please have each person's basic information ready when booking.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Services & Pricing FAQs -->
-            <div x-show="activeFaqTab === 'services'" x-transition:enter="transition ease-out duration-300"
-                x-transition:enter-start="opacity-0 transform translate-y-4"
-                x-transition:enter-end="opacity-100 transform translate-y-0">
-                
-                <div class="space-y-4">
-                    <!-- FAQ Item 1 -->
-                    <div x-data="{ open: false }" class="bg-white rounded-2xl shadow-md hover:shadow-lg transition-shadow">
-                        <button @click="open = !open" 
-                            class="w-full px-6 py-5 text-left flex items-center justify-between focus:outline-none">
-                            <span class="text-lg font-semibold text-gray-800">What services do you offer for children with special needs?</span>
-                            <svg class="w-6 h-6 text-teal-600 transform transition-transform duration-300" 
-                                :class="{ 'rotate-180': open }" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linecap="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                            </svg>
-                        </button>
-                        <div x-show="open" x-collapse class="px-6 pb-5">
-                            <p class="text-gray-600 leading-relaxed">
-                                Our pediatric special needs services include:
-                            </p>
-                            <ul class="mt-2 grid grid-cols-2 gap-2 text-gray-600">
-                                <li class="flex items-center gap-2">
-                                    <svg class="w-4 h-4 text-teal-600" fill="currentColor" viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                                    </svg>
-                                    <span>ABA Therapy</span>
-                                </li>
-                                <li class="flex items-center gap-2">
-                                    <svg class="w-4 h-4 text-teal-600" fill="currentColor" viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                                    </svg>
-                                    <span>Speech Therapy</span>
-                                </li>
-                                <li class="flex items-center gap-2">
-                                    <svg class="w-4 h-4 text-teal-600" fill="currentColor" viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                                    </svg>
-                                    <span>Occupational Therapy</span>
-                                </li>
-                                <li class="flex items-center gap-2">
-                                    <svg class="w-4 h-4 text-teal-600" fill="currentColor" viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                                    </svg>
-                                    <span>Social Skills Groups</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- FAQ Item 2 -->
-                    <div x-data="{ open: false }" class="bg-white rounded-2xl shadow-md hover:shadow-lg transition-shadow">
-                        <button @click="open = !open" 
-                            class="w-full px-6 py-5 text-left flex items-center justify-between focus:outline-none">
-                            <span class="text-lg font-semibold text-gray-800">How much does a typical consultation cost?</span>
-                            <svg class="w-6 h-6 text-teal-600 transform transition-transform duration-300" 
-                                :class="{ 'rotate-180': open }" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linecap="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                            </svg>
-                        </button>
-                        <div x-show="open" x-collapse class="px-6 pb-5">
-                            <p class="text-gray-600 leading-relaxed">
-                                Consultation fees vary by service:
-                            </p>
-                            <div class="mt-3 space-y-2">
-                                <div class="flex justify-between items-center border-b pb-2">
-                                    <span class="text-gray-700">Initial Psychological Assessment</span>
-                                    <span class="font-semibold text-teal-600">---</span>
-                                </div>
-                                <div class="flex justify-between items-center border-b pb-2">
-                                    <span class="text-gray-700">Physiotherapy Session</span>
-                                    <span class="font-semibold text-teal-600">---</span>
-                                </div>
-                                <div class="flex justify-between items-center border-b pb-2">
-                                    <span class="text-gray-700">Nutrition Consultation</span>
-                                    <span class="font-semibold text-teal-600">---</span>
-                                </div>
-                                <div class="flex justify-between items-center">
-                                    <span class="text-gray-700">Therapy Sessions (Children)</span>
-                                    <span class="font-semibold text-teal-600">---</span>
-                                </div>
+                    <div class="space-y-4">
+                        <!-- FAQ Item 1 -->
+                        <div x-data="{ open: false }"
+                            class="bg-white rounded-2xl shadow-md hover:shadow-lg transition-shadow">
+                            <button @click="open = !open"
+                                class="w-full px-6 py-5 text-left flex items-center justify-between focus:outline-none">
+                                <span class="text-lg font-semibold text-gray-800">What are your clinic's operating
+                                    hours?</span>
+                                <svg class="w-6 h-6 text-teal-600 transform transition-transform duration-300"
+                                    :class="{ 'rotate-180': open }" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linecap="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </button>
+                            <div x-show="open" x-collapse class="px-6 pb-5">
+                                <p class="text-gray-600 leading-relaxed">
+                                    We're open Monday to Friday from 9:00 AM to 8:00 PM, and Saturdays from 10:00 AM to
+                                    4:00 PM.
+                                    We remain closed on Sundays and public holidays. Emergency consultations are
+                                    available by appointment.
+                                </p>
                             </div>
-                            <p class="text-sm text-gray-500 mt-3">*Package discounts available for multiple sessions</p>
+                        </div>
+
+                        <!-- FAQ Item 2 -->
+                        <div x-data="{ open: false }"
+                            class="bg-white rounded-2xl shadow-md hover:shadow-lg transition-shadow">
+                            <button @click="open = !open"
+                                class="w-full px-6 py-5 text-left flex items-center justify-between focus:outline-none">
+                                <span class="text-lg font-semibold text-gray-800">Do I need a referral to book an
+                                    appointment?</span>
+                                <svg class="w-6 h-6 text-teal-600 transform transition-transform duration-300"
+                                    :class="{ 'rotate-180': open }" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linecap="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </button>
+                            <div x-show="open" x-collapse class="px-6 pb-5">
+                                <p class="text-gray-600 leading-relaxed">
+                                    No referral is needed for most of our services. However, for specialized
+                                    consultations
+                                    or insurance claims, a referral from your primary physician might be required. Our
+                                    team
+                                    can guide you based on your specific needs.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- FAQ Item 3 -->
+                        <div x-data="{ open: false }"
+                            class="bg-white rounded-2xl shadow-md hover:shadow-lg transition-shadow">
+                            <button @click="open = !open"
+                                class="w-full px-6 py-5 text-left flex items-center justify-between focus:outline-none">
+                                <span class="text-lg font-semibold text-gray-800">Is parking available at your
+                                    facility?</span>
+                                <svg class="w-6 h-6 text-teal-600 transform transition-transform duration-300"
+                                    :class="{ 'rotate-180': open }" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linecap="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </button>
+                            <div x-show="open" x-collapse class="px-6 pb-5">
+                                <p class="text-gray-600 leading-relaxed">
+                                    Yes, we have a dedicated parking area for our patients and visitors. The parking is
+                                    free
+                                    of charge and is monitored by security staff during operating hours.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- FAQ Item 4 -->
+                        <div x-data="{ open: false }"
+                            class="bg-white rounded-2xl shadow-md hover:shadow-lg transition-shadow">
+                            <button @click="open = !open"
+                                class="w-full px-6 py-5 text-left flex items-center justify-between focus:outline-none">
+                                <span class="text-lg font-semibold text-gray-800">Are your facilities accessible for
+                                    people with disabilities?</span>
+                                <svg class="w-6 h-6 text-teal-600 transform transition-transform duration-300"
+                                    :class="{ 'rotate-180': open }" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linecap="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </button>
+                            <div x-show="open" x-collapse class="px-6 pb-5">
+                                <p class="text-gray-600 leading-relaxed">
+                                    Absolutely. Our clinic is wheelchair accessible with ramps, wide doorways, and
+                                    accessible
+                                    washrooms. Please let us know in advance if you require any specific accommodations.
+                                </p>
+                            </div>
                         </div>
                     </div>
+                </div>
 
-                    <!-- FAQ Item 3 -->
-                    <div x-data="{ open: false }" class="bg-white rounded-2xl shadow-md hover:shadow-lg transition-shadow">
-                        <button @click="open = !open" 
-                            class="w-full px-6 py-5 text-left flex items-center justify-between focus:outline-none">
-                            <span class="text-lg font-semibold text-gray-800">Do you offer online/virtual consultations?</span>
-                            <svg class="w-6 h-6 text-teal-600 transform transition-transform duration-300" 
-                                :class="{ 'rotate-180': open }" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linecap="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                <!-- Appointments FAQs -->
+                <div x-show="activeFaqTab === 'appointments'" x-transition:enter="transition ease-out duration-300"
+                    x-transition:enter-start="opacity-0 transform translate-y-4"
+                    x-transition:enter-end="opacity-100 transform translate-y-0">
+
+                    <div class="space-y-4">
+                        <!-- FAQ Item 1 -->
+                        <div x-data="{ open: false }"
+                            class="bg-white rounded-2xl shadow-md hover:shadow-lg transition-shadow">
+                            <button @click="open = !open"
+                                class="w-full px-6 py-5 text-left flex items-center justify-between focus:outline-none">
+                                <span class="text-lg font-semibold text-gray-800">How do I schedule an
+                                    appointment?</span>
+                                <svg class="w-6 h-6 text-teal-600 transform transition-transform duration-300"
+                                    :class="{ 'rotate-180': open }" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linecap="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </button>
+                            <div x-show="open" x-collapse class="px-6 pb-5">
+                                <p class="text-gray-600 leading-relaxed">
+                                    You can book appointments through multiple channels:
+                                </p>
+                                <ul class="mt-2 space-y-2 text-gray-600">
+                                    <li class="flex items-start gap-2">
+                                        <svg class="w-5 h-5 text-teal-600 mt-0.5 flex-shrink-0" fill="currentColor"
+                                            viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd"
+                                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                                clip-rule="evenodd" />
+                                        </svg>
+                                        <span>Call us at +92 333 3893960</span>
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <svg class="w-5 h-5 text-teal-600 mt-0.5 flex-shrink-0" fill="currentColor"
+                                            viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd"
+                                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                                clip-rule="evenodd" />
+                                        </svg>
+                                        <span>Use our online booking portal (coming soon)</span>
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <svg class="w-5 h-5 text-teal-600 mt-0.5 flex-shrink-0" fill="currentColor"
+                                            viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd"
+                                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                                clip-rule="evenodd" />
+                                        </svg>
+                                        <span>Email us at appointments@smilehealthclinic.com</span>
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <svg class="w-5 h-5 text-teal-600 mt-0.5 flex-shrink-0" fill="currentColor"
+                                            viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd"
+                                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                                clip-rule="evenodd" />
+                                        </svg>
+                                        <span>Visit our reception desk in person</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- FAQ Item 2 -->
+                        <div x-data="{ open: false }"
+                            class="bg-white rounded-2xl shadow-md hover:shadow-lg transition-shadow">
+                            <button @click="open = !open"
+                                class="w-full px-6 py-5 text-left flex items-center justify-between focus:outline-none">
+                                <span class="text-lg font-semibold text-gray-800">What is your cancellation
+                                    policy?</span>
+                                <svg class="w-6 h-6 text-teal-600 transform transition-transform duration-300"
+                                    :class="{ 'rotate-180': open }" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linecap="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </button>
+                            <div x-show="open" x-collapse class="px-6 pb-5">
+                                <p class="text-gray-600 leading-relaxed">
+                                    We kindly request at least 24 hours' notice for cancellations or rescheduling.
+                                    Late cancellations (less than 24 hours) may incur a fee of $25. No-shows without
+                                    prior notice will be charged 50% of the consultation fee.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- FAQ Item 3 -->
+                        <div x-data="{ open: false }"
+                            class="bg-white rounded-2xl shadow-md hover:shadow-lg transition-shadow">
+                            <button @click="open = !open"
+                                class="w-full px-6 py-5 text-left flex items-center justify-between focus:outline-none">
+                                <span class="text-lg font-semibold text-gray-800">How early should I arrive for my
+                                    appointment?</span>
+                                <svg class="w-6 h-6 text-teal-600 transform transition-transform duration-300"
+                                    :class="{ 'rotate-180': open }" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linecap="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </button>
+                            <div x-show="open" x-collapse class="px-6 pb-5">
+                                <p class="text-gray-600 leading-relaxed">
+                                    We recommend arriving 10-15 minutes before your scheduled appointment time to
+                                    complete
+                                    any necessary paperwork. For first-time visitors, please arrive 20 minutes early.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- FAQ Item 4 -->
+                        <div x-data="{ open: false }"
+                            class="bg-white rounded-2xl shadow-md hover:shadow-lg transition-shadow">
+                            <button @click="open = !open"
+                                class="w-full px-6 py-5 text-left flex items-center justify-between focus:outline-none">
+                                <span class="text-lg font-semibold text-gray-800">Can I book appointments for multiple
+                                    family members?</span>
+                                <svg class="w-6 h-6 text-teal-600 transform transition-transform duration-300"
+                                    :class="{ 'rotate-180': open }" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linecap="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </button>
+                            <div x-show="open" x-collapse class="px-6 pb-5">
+                                <p class="text-gray-600 leading-relaxed">
+                                    Yes, absolutely. You can schedule appointments for different family members in one
+                                    call.
+                                    Please have each person's basic information ready when booking.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Services & Pricing FAQs -->
+                <div x-show="activeFaqTab === 'services'" x-transition:enter="transition ease-out duration-300"
+                    x-transition:enter-start="opacity-0 transform translate-y-4"
+                    x-transition:enter-end="opacity-100 transform translate-y-0">
+
+                    <div class="space-y-4">
+                        <!-- FAQ Item 1 -->
+                        <div x-data="{ open: false }"
+                            class="bg-white rounded-2xl shadow-md hover:shadow-lg transition-shadow">
+                            <button @click="open = !open"
+                                class="w-full px-6 py-5 text-left flex items-center justify-between focus:outline-none">
+                                <span class="text-lg font-semibold text-gray-800">What services do you offer for
+                                    children with special needs?</span>
+                                <svg class="w-6 h-6 text-teal-600 transform transition-transform duration-300"
+                                    :class="{ 'rotate-180': open }" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linecap="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </button>
+                            <div x-show="open" x-collapse class="px-6 pb-5">
+                                <p class="text-gray-600 leading-relaxed">
+                                    Our pediatric special needs services include:
+                                </p>
+                                <ul class="mt-2 grid grid-cols-2 gap-2 text-gray-600">
+                                    <li class="flex items-center gap-2">
+                                        <svg class="w-4 h-4 text-teal-600" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd"
+                                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                                clip-rule="evenodd" />
+                                        </svg>
+                                        <span>ABA Therapy</span>
+                                    </li>
+                                    <li class="flex items-center gap-2">
+                                        <svg class="w-4 h-4 text-teal-600" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd"
+                                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                                clip-rule="evenodd" />
+                                        </svg>
+                                        <span>Speech Therapy</span>
+                                    </li>
+                                    <li class="flex items-center gap-2">
+                                        <svg class="w-4 h-4 text-teal-600" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd"
+                                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                                clip-rule="evenodd" />
+                                        </svg>
+                                        <span>Occupational Therapy</span>
+                                    </li>
+                                    <li class="flex items-center gap-2">
+                                        <svg class="w-4 h-4 text-teal-600" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd"
+                                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                                clip-rule="evenodd" />
+                                        </svg>
+                                        <span>Social Skills Groups</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- FAQ Item 2 -->
+                        <div x-data="{ open: false }"
+                            class="bg-white rounded-2xl shadow-md hover:shadow-lg transition-shadow">
+                            <button @click="open = !open"
+                                class="w-full px-6 py-5 text-left flex items-center justify-between focus:outline-none">
+                                <span class="text-lg font-semibold text-gray-800">How much does a typical consultation
+                                    cost?</span>
+                                <svg class="w-6 h-6 text-teal-600 transform transition-transform duration-300"
+                                    :class="{ 'rotate-180': open }" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linecap="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </button>
+                            <div x-show="open" x-collapse class="px-6 pb-5">
+                                <p class="text-gray-600 leading-relaxed">
+                                    Consultation fees vary by service:
+                                </p>
+                                <div class="mt-3 space-y-2">
+                                    <div class="flex justify-between items-center border-b pb-2">
+                                        <span class="text-gray-700">Initial Psychological Assessment</span>
+                                        <span class="font-semibold text-teal-600">---</span>
+                                    </div>
+                                    <div class="flex justify-between items-center border-b pb-2">
+                                        <span class="text-gray-700">Physiotherapy Session</span>
+                                        <span class="font-semibold text-teal-600">---</span>
+                                    </div>
+                                    <div class="flex justify-between items-center border-b pb-2">
+                                        <span class="text-gray-700">Nutrition Consultation</span>
+                                        <span class="font-semibold text-teal-600">---</span>
+                                    </div>
+                                    <div class="flex justify-between items-center">
+                                        <span class="text-gray-700">Therapy Sessions (Children)</span>
+                                        <span class="font-semibold text-teal-600">---</span>
+                                    </div>
+                                </div>
+                                <p class="text-sm text-gray-500 mt-3">*Package discounts available for multiple
+                                    sessions</p>
+                            </div>
+                        </div>
+
+                        <!-- FAQ Item 3 -->
+                        <div x-data="{ open: false }"
+                            class="bg-white rounded-2xl shadow-md hover:shadow-lg transition-shadow">
+                            <button @click="open = !open"
+                                class="w-full px-6 py-5 text-left flex items-center justify-between focus:outline-none">
+                                <span class="text-lg font-semibold text-gray-800">Do you offer online/virtual
+                                    consultations?</span>
+                                <svg class="w-6 h-6 text-teal-600 transform transition-transform duration-300"
+                                    :class="{ 'rotate-180': open }" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linecap="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </button>
+                            <div x-show="open" x-collapse class="px-6 pb-5">
+                                <p class="text-gray-600 leading-relaxed">
+                                    Yes, we offer secure video consultations for select services including psychological
+                                    counseling, nutritional guidance, and follow-up appointments. Please specify your
+                                    preference for virtual consultation when booking.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Insurance & Payment FAQs -->
+                <div x-show="activeFaqTab === 'insurance'" x-transition:enter="transition ease-out duration-300"
+                    x-transition:enter-start="opacity-0 transform translate-y-4"
+                    x-transition:enter-end="opacity-100 transform translate-y-0">
+
+                    <div class="space-y-4">
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Still Have Questions CTA -->
+            <div class="text-center mt-12">
+                <div class="bg-gradient-to-r from-teal-50 to-blue-50 rounded-2xl p-8 max-w-3xl mx-auto">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-3">Still Have Questions?</h3>
+                    <p class="text-gray-600 mb-6">We're here to help! Reach out to us anytime.</p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                        <a href="tel:+923333893960"
+                            class="inline-flex items-center justify-center gap-2 bg-white text-teal-600 px-6 py-3 rounded-full font-semibold hover:bg-teal-50 transition-colors border border-teal-200">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linecap="round" stroke-width="2"
+                                    d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                             </svg>
-                        </button>
-                        <div x-show="open" x-collapse class="px-6 pb-5">
-                            <p class="text-gray-600 leading-relaxed">
-                                Yes, we offer secure video consultations for select services including psychological 
-                                counseling, nutritional guidance, and follow-up appointments. Please specify your 
-                                preference for virtual consultation when booking.
-                            </p>
-                        </div>
+                            Call Us
+                        </a>
+                        <a href="mailto:smilehealthclinic.info@gmail.com?subject=Question%20from%20Website"
+                            class="inline-flex items-center justify-center gap-2 bg-teal-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-teal-700 transition-colors">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linecap="round" stroke-width="2"
+                                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                            </svg>
+                            Email Us
+                        </a>
                     </div>
                 </div>
             </div>
-
-            <!-- Insurance & Payment FAQs -->
-            <div x-show="activeFaqTab === 'insurance'" x-transition:enter="transition ease-out duration-300"
-                x-transition:enter-start="opacity-0 transform translate-y-4"
-                x-transition:enter-end="opacity-100 transform translate-y-0">
-                
-                <div class="space-y-4">
-                    
-                </div>
-            </div>
         </div>
-
-        <!-- Still Have Questions CTA -->
-        <div class="text-center mt-12">
-            <div class="bg-gradient-to-r from-teal-50 to-blue-50 rounded-2xl p-8 max-w-3xl mx-auto">
-                <h3 class="text-2xl font-bold text-gray-800 mb-3">Still Have Questions?</h3>
-                <p class="text-gray-600 mb-6">We're here to help! Reach out to us anytime.</p>
-                <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                    <a href="tel:+923333893960" 
-                       class="inline-flex items-center justify-center gap-2 bg-white text-teal-600 px-6 py-3 rounded-full font-semibold hover:bg-teal-50 transition-colors border border-teal-200">
-                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linecap="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                        </svg>
-                        Call Us
-                    </a>
-                    <a href="mailto:smilehealthclinic.info@gmail.com?subject=Question%20from%20Website" 
-                       class="inline-flex items-center justify-center gap-2 bg-teal-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-teal-700 transition-colors">
-                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linecap="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                        </svg>
-                        Email Us
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+    </section>
 
     <!-- Team Preview -->
     <x-doctor-profile />
@@ -1010,6 +1243,48 @@
     <!-- Stats -->
     <x-stats />
 </div>
+
+@keyframes blob {
+    0% { transform: translate(0px, 0px) scale(1); }
+    33% { transform: translate(30px, -50px) scale(1.1); }
+    66% { transform: translate(-20px, 20px) scale(0.9); }
+    100% { transform: translate(0px, 0px) scale(1); }
+}
+.animate-blob {
+    animation: blob 7s infinite;
+}
+.animation-delay-2000 {
+    animation-delay: 2s;
+}
+.animate-fade-in-down {
+    animation: fadeInDown 1s ease-out;
+}
+.animate-fade-in-up {
+    animation: fadeInUp 1s ease-out;
+}
+.animation-delay-200 {
+    animation-delay: 200ms;
+}
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
 <script>
     function homePage() {
