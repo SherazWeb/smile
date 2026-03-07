@@ -82,7 +82,7 @@
                 </div>
                 <a href="/events"
                     class="text-gray-700 hover:text-[#37A47D] font-medium transition duration-300">Events</a>
-                <a href="#"
+                <a href="/about"
                     class="text-gray-700 hover:text-[#37A47D] font-medium transition duration-300">About</a>
                 <a href="#"
                     class="text-gray-700 hover:text-[#37A47D] font-medium transition duration-300">Team</a>
@@ -120,7 +120,7 @@
             <div class="space-y-4">
                 <a href="#" class="block text-gray-700 hover:text-[#37A47D] font-medium py-2">Home</a>
                 <a href="#services" class="block text-gray-700 hover:text-[#37A47D] font-medium py-2">Services</a>
-                <a href="#" class="block text-gray-700 hover:text-[#37A47D] font-medium py-2">About</a>
+                <a href="/about" class="block text-gray-700 hover:text-[#37A47D] font-medium py-2">About</a>
                 <a href="#" class="block text-gray-700 hover:text-[#37A47D] font-medium py-2">Team</a>
                 <a href="#footer" class="block text-gray-700 hover:text-[#37A47D] font-medium py-2">Contact</a>
                 <div class="pt-4 border-t border-gray-200 space-y-3">
