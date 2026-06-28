@@ -12,33 +12,38 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('appointments', function (Blueprint $table) {
-            // Primary Key
             $table->id();
 
-            // === Patient Information ===
+            // Patient Information
             $table->string('patient_name');
             $table->string('patient_email');
             $table->string('patient_phone');
-            $table->tinyInteger('age')->nullable()->unsigned()->min(2)->max(120);
+            $table->unsignedTinyInteger('age')->nullable();
             $table->enum('gender', ['male', 'female', 'other', 'prefer_not_to_say'])->nullable();
 
-            // === Appointment Core Details ===
-            $table->foreignId('service_id')->constrained('services')->onDelete('cascade');
+            // Appointment Type
+            $table->enum('appointment_type', ['online', 'physical'])->default('physical');
+
+            // Appointment Core Details
+            $table->foreignId('service_id')
+                ->constrained('services')
+                ->onDelete('cascade');
+
             $table->date('appointment_date');
             $table->time('appointment_time');
-            $table->text('notes')->nullable(); // For symptoms, special requests, etc.
 
-            // === Status Workflow ===
+            $table->text('notes')->nullable();
+
+            // Status Workflow
             $table->enum('status', [
-                'pending',      
-                'confirmed',    
-                'completed',    
-                'cancelled'     
+                'pending',
+                'confirmed',
+                'completed',
+                'cancelled'
             ])->default('pending');
 
-            // === Timestamps ===
             $table->timestamps();
-            $table->softDeletes(); 
+            $table->softDeletes();
         });
     }
 
